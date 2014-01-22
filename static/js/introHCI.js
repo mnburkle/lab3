@@ -56,7 +56,6 @@ function makeDescription(containingProject, textToDescribe) {
        $(containingProject).append("<div class='project-description'><p>" + textToDescribe + "</p></div>"); 
     } else { 
        description.find("p").text(textToDescribe);
-       console.log('set text');
        if(description.is(":visible"))
 	       description.fadeOut();
 	   else {
